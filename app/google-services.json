@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "362319705411",
+    "firebase_url": "https://basedatos-14991-default-rtdb.firebaseio.com",
+    "project_id": "basedatos-14991",
+    "storage_bucket": "basedatos-14991.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362319705411:android:ff7a62ebc387ae9684ebf6",
+        "android_client_info": {
+          "package_name": "com.example.myapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzKa4IlQzpzZTHZRA4wPAnacZNq6OfQqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362319705411:android:30ace87743f1e73184ebf6",
+        "android_client_info": {
+          "package_name": "com.example.mytarea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzKa4IlQzpzZTHZRA4wPAnacZNq6OfQqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
