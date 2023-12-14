@@ -22,7 +22,7 @@ public class fragmento3 extends Fragment {
     private List<Usuario> usuariosList;
 
     public fragmento3() {
-        // Required empty public constructor
+
     }
 
 
@@ -32,16 +32,16 @@ public class fragmento3 extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fragmento3, container, false);
 
-        // Inicializar la lista de usuarios y el adaptador
+
         usuariosList = new ArrayList<>();
         usuarioAdapter = new UsuarioAdapter(usuariosList);
 
-        // Configurar RecyclerView
+
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         recyclerView.setAdapter(usuarioAdapter);
 
-        // Obtener datos de Firebase
+
         obtenerDatosFirebase();
 
         return view;
@@ -55,19 +55,19 @@ public class fragmento3 extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 usuariosList.clear();
 
-                // Iterar a través de los datos y agregar a la lista
+
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Usuario usuario = snapshot.getValue(Usuario.class);
                     usuariosList.add(usuario);
                 }
 
-                // Notificar al adaptador sobre el cambio en los datos
+
                 usuarioAdapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                // Manejar errores de lectura desde Firebase
+
             }
         });
     }
