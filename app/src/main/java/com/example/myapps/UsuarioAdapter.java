@@ -23,7 +23,13 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.UsuarioV
         return new UsuarioViewHolder(view);
     }
 
-
+    @Override
+    public void onBindViewHolder(@NonNull UsuarioViewHolder holder, int position) {
+        Usuario usuario = usuariosList.get(position);
+        holder.nombreTextView.setText(usuario.getNombre());
+        holder.apellidoTextView.setText(usuario.getApellido());
+        holder.fechaTextView.setText(usuario.getFecha());
+    }
     @Override
     public void onBindViewHolder(@NonNull UsuarioViewHolder holder, int position) {
         Usuario usuario = usuariosList.get(position);
